@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="/static/css/style.css">
+{% load static %}"
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>{{ titulo }} </title>
+</head>
+<body>
+  
+      <header>
+        <nav>
+         <img src="/static/img/logo.png" alt="Logo Akuma">
+         <ul class="navegacion">
+             <li><a href="{% url     "landing_page" %}">Inicio</a></li>
+             <li><a href="{% url     "somos_page" %}">Quienes Somos</a></li>
+             <li><a href="{% url     "ventas_page" %}">Nuestros Trabajos</a></li>
+             <li><a href="{% url     "contacto_page" %}">Contacto</a></li>
+           </ul>
+        </nav>
+     </header>
+  
+
+    {% block content %}  {% endblock %} 
+    <footer>
+    
+        <div class="sociales">
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img src="/static/img/facebook.png" alt="Facebook" loading="lazy" class="socicon"/></a>
+            <a href="https://www.instagram.com/akuma.ar/" target="_blank"
+              ><img src="/static/img/instagram.png" alt="Instagram" loading="lazy" class="socicon"/></a>
+            <a href="https://www.linkedin.com/in/l-novelli/" target="_blank"
+              ><img src="/static/img/linkedin.png" alt="Linkedin" loading="lazy" class="socicon"/></a>
+            <a href="https://github.com/L-Novelli/CaC2023" target="_blank"
+              ><img src="/static/img/github.png" alt="Github" class="socicon"/></a>
+        </div>
+   </footer>
+    </center>
+    
+</body>
+</html>
