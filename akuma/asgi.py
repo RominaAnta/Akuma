@@ -1,5 +1,5 @@
 """
-ASGI config for movies project.
+ASGI config for akuma project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
