@@ -1,7 +1,7 @@
 from django.views.generic import TemplateView
 
-class LandingPage(TemplateView):
-    template_name = "pages/landing_page.html"
+class Index(TemplateView):
+    template_name = "pages/index.html"
     extra_context = {
         'titulo': "Landing Page"
         } 
